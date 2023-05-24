@@ -1,11 +1,21 @@
-import { View, Text } from 'react-native'
+import { View, TextInput, StyleSheet } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 const InputBox = () => {
     return (
-        <View>
-            <Text>InputBox</Text>
+        <View style={styles.container}>
+            <AntDesign name="plus" size={24} color="royalblue" />
+            <TextInput style={styles.input} />
+            <MaterialIcons style={styles.send} name="send" size={24} color="white" />
         </View>
-    )
-}
+    );
+};
 
-export default InputBox
+const styles = StyleSheet.create({
+    container: {},
+    input: {},
+    send: {},
+});
+
+export default InputBox;
