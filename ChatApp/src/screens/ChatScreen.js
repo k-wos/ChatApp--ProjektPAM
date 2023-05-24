@@ -1,11 +1,18 @@
-import { View, Text } from "react-native";
+import { Text, ImageBackground, StyleSheet } from "react-native";
+import bg from "../../assets/images/BG.png";
 
 const ChatScreen = () => {
   return (
-    <View>
+    <ImageBackground source={bg} style={styles.bg}>
       <Text>ChatScreen</Text>
-    </View>
+    </ImageBackground>
   );
 };
+
+const styles = StyleSheet.create({
+  bg: {
+    flex: 1,
+  },
+});
 
 export default ChatScreen;
