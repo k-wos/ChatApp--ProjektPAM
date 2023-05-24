@@ -1,11 +1,9 @@
-// src/screens/NotImplementedScreen.js
-
 import { View, Text, Image, StyleSheet } from "react-native";
 
 const NotImplementedScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Not Implemented!</Text>
+            <Text style={styles.text}>Nie zaimplementowano!</Text>
             <Image
                 source={{
                     uri: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/capybara+copy.png",
