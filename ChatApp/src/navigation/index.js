@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
+import { NavigationContainer } from "@react-navigation/native";
+import ChatsScreen from "../screens/ChatsScreen";
 
 const Navigator = () => {
     return (
-        <View>
-            <Text>Navigator</Text>
-        </View>
+        <NavigationContainer>
+            <ChatsScreen />
+        </NavigationContainer>
     );
 };
 
