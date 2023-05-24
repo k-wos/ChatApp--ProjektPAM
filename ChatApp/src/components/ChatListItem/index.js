@@ -3,7 +3,9 @@ import { useNavigation } from '@react-navigation/native';
 
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import 'dayjs/locale/pl';
 dayjs.extend(relativeTime);
+dayjs.locale('pl');
 
 const ChatListItem = ({ chat }) => {
   const navigation = useNavigation();

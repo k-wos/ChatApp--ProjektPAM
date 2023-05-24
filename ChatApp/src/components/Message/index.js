@@ -1,7 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import 'dayjs/locale/pl';
 dayjs.extend(relativeTime);
+dayjs.locale('pl');
 
 const Message = ({ message }) => {
     const isMyMessage = () => {
